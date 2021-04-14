@@ -36,5 +36,6 @@ public interface ItemServiceFeign {
     PageResult selectItemParamAll(@RequestParam Integer page,@RequestParam Integer rows);
     @RequestMapping("/service/itemParam/insertItemParam")
     Integer insertItemParam(@RequestParam Long itemCatId,@RequestParam String paramData);
-
+    @RequestMapping("/service/itemParam/deleteItemParamById")
+    Integer deleteItemParamById(@RequestParam Long id);
 }

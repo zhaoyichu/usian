@@ -44,5 +44,14 @@ public class ItemParamController {
         return  Result.error("添加失败，已有");
     }
 
+    @RequestMapping("deleteItemParamById")
+    public Result deleteItemParamById(Long id){
+        Integer num=itemServiceFeign.deleteItemParamById(id);
+        if (num == 1){
+            return Result.ok();
+        }
+        return Result.error("删除失败");
+    }
+
 
 }

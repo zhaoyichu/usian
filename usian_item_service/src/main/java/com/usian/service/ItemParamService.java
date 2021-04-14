@@ -61,4 +61,10 @@ public class ItemParamService {
 
 
     }
+
+    public Integer deleteItemParamById(Long id) {
+        Integer num= tbItemParamMapper.deleteByPrimaryKey(id);
+
+        return num;
+    }
 }
