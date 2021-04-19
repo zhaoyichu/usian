@@ -1,11 +1,9 @@
 package com.usian.controller;
 
-import com.jiyun.utils.Result;
-import com.usian.pojo.TbItem;
+import com.jiyun.utils.CatResult;
 import com.usian.pojo.TbItemCat;
 import com.usian.service.ItemCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,6 +25,10 @@ public class ItemCategoryController {
         return itemCategoryService.selectItemCategoryByParentId(id);
     }
 
+    @RequestMapping("/selectItemCategoryAll")
+    public CatResult selectItemCategoryAll(){
+        return itemCategoryService.selectItemCategoryAll();
+    }
 
 
 }

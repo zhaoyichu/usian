@@ -1,5 +1,6 @@
 package com.usian.feign;
 
+import com.jiyun.utils.AdNode;
 import com.jiyun.utils.PageResult;
 import com.usian.pojo.TbContent;
 import com.usian.pojo.TbContentCategory;
@@ -27,4 +28,7 @@ public interface ContentServiceFeign {
     Integer insertTbContent(TbContent tbContent);
     @RequestMapping("/service/content/deleteContentByIds")
     Integer deleteContentByIds(@RequestParam("id") Long id);
+    @PostMapping("/service/content/selectFrontendContentByAD")
+    List<AdNode> selectFrontendContentByAD();
+
 }

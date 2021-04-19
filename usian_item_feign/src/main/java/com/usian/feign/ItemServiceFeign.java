@@ -1,9 +1,11 @@
 package com.usian.feign;
 
+import com.jiyun.utils.CatResult;
 import com.jiyun.utils.PageResult;
 import com.usian.pojo.TbItem;
 import com.usian.pojo.TbItemCat;
 import com.usian.pojo.TbItemParam;
+
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -34,8 +36,18 @@ public interface ItemServiceFeign {
     Map<String, Object> preUpdateItem(@RequestParam Long itemId);
     @RequestMapping("/service/itemParam/selectItemParamAll")
     PageResult selectItemParamAll(@RequestParam Integer page,@RequestParam Integer rows);
+
     @RequestMapping("/service/itemParam/insertItemParam")
     Integer insertItemParam(@RequestParam Long itemCatId,@RequestParam String paramData);
     @RequestMapping("/service/itemParam/deleteItemParamById")
     Integer deleteItemParamById(@RequestParam Long id);
+    @GetMapping("/service/itemCategory/selectItemCategoryAll")
+    CatResult selectItemCategoryAll();
+
+
+
+
+
+
+
 }

@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/commom_eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common_mapper/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common_pojo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common_redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common_utils/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usian_content_feign/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usian_content_service/src/main/java" charset="UTF-8" />
@@ -11,5 +12,6 @@
     <file url="file://$PROJECT_DIR$/usian_item_feign/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usian_item_service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usian_item_web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/usian_portal_web/src/main/java" charset="UTF-8" />
   </component>
 </project>
